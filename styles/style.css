@@ -188,7 +188,33 @@ footer {
     }
 }
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1368px) {
+
+    header {
+        justify-items: center;
+    }
+
+    .contactInfo {
+        grid-column: auto;
+    }
+
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    main {
+        grid-column-gap: 20px;
+        justify-content: center;
+    }
+
+    .boxContent {
+        justify-self: center;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -197,24 +223,15 @@ footer {
         justify-self: center;
     }
 
-    html {
-        height: inherit;
+
+    body {
+        margin: 0;
     }
+
 
 }
 
-@media screen and (max-width: 1050px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    .boxContent {
-        justify-self: center;
-    }
-
-}
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
     }
@@ -236,7 +253,7 @@ footer {
     html {
         margin: 0;
         padding: 0;
-        width: 100vh;
+        min-width: 344px;
     }
 
     body {
@@ -246,4 +263,5 @@ footer {
     .logo {
         justify-self: center;
     }
+
 }
