@@ -13,6 +13,7 @@ html {
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
+    height: 100vh;
 }
 
 body {
@@ -196,6 +197,10 @@ footer {
         justify-self: center;
     }
 
+    html {
+        height: inherit;
+    }
+
 }
 
 @media screen and (max-width: 1050px) {
@@ -228,8 +233,17 @@ footer {
         grid-column: 1;
     }
 
-    .body {
+    html {
         margin: 0;
         padding: 0;
+        width: 100vh;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .logo {
+        justify-self: center;
     }
 }
