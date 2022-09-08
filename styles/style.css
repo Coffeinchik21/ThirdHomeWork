@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+a {
+    color: #fff;
+}
+
+html {
+    background-image: url(/img/background.png);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 49px;
+    margin-bottom: 49px;
+}
+
+.contactInfo {
+    grid-column: end;
+    text-align: right;
+}
+
+.contactInfo p {
+    font-size: 18px;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+}
+
+.logoName {
+    justify-self: start;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.logoName a {
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 0.77em;
+    color: #fff;
+}
+
+.logoName a:hover {
+    color: #F26522;
+}
+
+.smallTextLogo {
+    font-size: 18px;
+}
+
+.logoIMG {
+    justify-self: start;
+}
+
+a.imgRollover {
+    background: url(/img/logo.png);
+    display: block;
+    width: 46px;
+    height: 44px;
+}
+
+a.imgRollover:hover {
+    background-image: url(/img/logoHover.png);
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 62px;
+    grid-row-gap: 54px;
+    margin-bottom: 60px;
+}
+
+.box1,
+.box4 {
+    justify-self: start;
+}
+
+.box3,
+.box6 {
+    justify-self: end;
+}
+
+.box2,
+.box5 {
+    justify-self: center;
+}
+
+.boxContent {
+    text-align: center;
+}
+
+.contentPhoto {
+    margin-bottom: 20px;
+    border: 3px solid;
+    border-image-source: linear-gradient(0deg, #000, #fff);
+    height: 200px;
+    border-image-slice: 1;
+    position: relative;
+}
+
+.contentName {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hoverContent {
+    position: absolute;
+    top: 133px;
+    right: -3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F26522;
+    width: 313px;
+    opacity: 0;
+}
+
+.boxContent:hover .hoverContent {
+    animation: flowOut 1s forwards;
+}
+
+.boxContent:hover .contentName {
+    color: #F26522;
+}
+
+.hoverText {
+    justify-self: start;
+    font-size: 10px;
+    padding-left: 21px;
+    padding-bottom: 17px;
+    padding-top: 16px;
+    text-align: left;
+}
+
+.detailsArrow {
+    padding-right: 18px;
+    padding-left: 15px;
+}
+
+.bigPriceText {
+    font-size: 20px;
+}
+
+.detailsHover {
+    justify-self: end;
+    align-self: center;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@keyframes flowOut {
+    from {
+        height: 40px;
+        transform: translateY(30px);
+    }
+
+    to {
+        height: 70px;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .boxContent {
+        justify-self: center;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .boxContent {
+        justify-self: center;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .boxContent {
+        justify-self: center;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    .contactInfo {
+        text-align: center;
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .body {
+        margin: 0;
+        padding: 0;
+    }
+}
