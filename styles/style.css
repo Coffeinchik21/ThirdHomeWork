@@ -9,7 +9,7 @@ a {
 }
 
 html {
-    background-image: url(/img/background.png);
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
@@ -70,14 +70,14 @@ header {
 }
 
 a.imgRollover {
-    background: url(/img/logo.png);
+    background: url(../img/logo.png);
     display: block;
     width: 46px;
     height: 44px;
 }
 
 a.imgRollover:hover {
-    background-image: url(/img/logoHover.png);
+    background-image: url(../img/logoHover.png);
 
 }
 
