@@ -30,12 +30,12 @@ header {
     margin-bottom: 49px;
 }
 
-.contactInfo {
+.contact-info {
     grid-column: end;
     text-align: right;
 }
 
-.contactInfo p {
+.contact-info p {
     font-size: 18px;
 }
 
@@ -44,13 +44,13 @@ header {
     grid-template-columns: 46px 1fr;
 }
 
-.logoName {
+.logo-name {
     justify-self: start;
     text-align: center;
     margin-left: 15px;
 }
 
-.logoName a {
+.logo-name a {
     font-size: 29px;
     text-transform: uppercase;
     font-weight: 700;
@@ -58,26 +58,26 @@ header {
     color: #fff;
 }
 
-.logoName a:hover {
+.logo-name a:hover {
     color: #F26522;
 }
 
-.smallTextLogo {
+.logo--small-text {
     font-size: 18px;
 }
 
-.logoIMG {
+.logo__img {
     justify-self: start;
 }
 
-a.imgRollover {
+a.img__rollover {
     background: url(../img/logo.png);
     display: block;
     width: 46px;
     height: 44px;
 }
 
-a.imgRollover:hover {
+a.img__rollover:hover {
     background-image: url(../img/logoHover.png);
 
 }
@@ -105,11 +105,11 @@ main {
     justify-self: center;
 }
 
-.boxContent {
+.box-content {
     text-align: center;
 }
 
-.contentPhoto {
+.content-photo {
     margin-bottom: 20px;
     border: 3px solid;
     border-image-source: linear-gradient(0deg, #000, #fff);
@@ -118,12 +118,12 @@ main {
     position: relative;
 }
 
-.contentName {
+.content-name {
     font-size: 18px;
     font-weight: 400;
 }
 
-.hoverContent {
+.hover-content {
     position: absolute;
     top: 133px;
     right: -3px;
@@ -134,15 +134,15 @@ main {
     opacity: 0;
 }
 
-.boxContent:hover .hoverContent {
+.box-content:hover .hover-content {
     animation: flowOut 1s forwards;
 }
 
-.boxContent:hover .contentName {
+.box-content:hover .content-name {
     color: #F26522;
 }
 
-.hoverText {
+.hover-text {
     justify-self: start;
     font-size: 10px;
     padding-left: 21px;
@@ -151,16 +151,16 @@ main {
     text-align: left;
 }
 
-.detailsArrow {
+.details-arrow {
     padding-right: 18px;
     padding-left: 15px;
 }
 
-.bigPriceText {
+.text--big-price {
     font-size: 20px;
 }
 
-.detailsHover {
+.details-hover {
     justify-self: end;
     align-self: center;
     font-size: 14px;
@@ -190,11 +190,15 @@ footer {
 
 @media screen and (max-width: 1368px) {
 
+    html {
+        height: inherit;
+    }
+
     header {
         justify-items: center;
     }
 
-    .contactInfo {
+    .contact-info {
         grid-column: auto;
     }
 
@@ -208,22 +212,19 @@ footer {
         justify-content: center;
     }
 
-    .boxContent {
+    .box-content {
         justify-self: center;
     }
 
 }
 
 @media screen and (max-width: 1024px) {
-    html {
-        height: inherit;
-    }
 
     main {
         grid-template-columns: 1fr 1fr;
     }
 
-    .boxContent {
+    .box-content {
         justify-self: center;
     }
 
@@ -240,7 +241,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .boxContent {
+    .box-content {
         justify-self: center;
     }
 
@@ -248,7 +249,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .contactInfo {
+    .contact-info {
         text-align: center;
         grid-row: 2;
         grid-column: 1;
